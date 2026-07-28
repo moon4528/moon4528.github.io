@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko-KR"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko-KR" /><updated>2026-07-28T16:43:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">형주의 개발 블로그</title><subtitle>백엔드 개발과 프로젝트 경험을 기록합니다.</subtitle><author><name>문형주</name></author><entry><title type="html">Bitepick Infra</title><link href="http://localhost:4000/2026/07/28/bitepick-infra.html" rel="alternate" type="text/html" title="Bitepick Infra" /><published>2026-07-28T00:00:00+09:00</published><updated>2026-07-28T00:00:00+09:00</updated><id>http://localhost:4000/2026/07/28/bitepick-infra</id><content type="html" xml:base="http://localhost:4000/2026/07/28/bitepick-infra.html"><![CDATA[]]></content><author><name>문형주</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">GitHub Pages로 개발 블로그 시작하기</title><link href="http://localhost:4000/github/blog/2026/07/25/first-post.html" rel="alternate" type="text/html" title="GitHub Pages로 개발 블로그 시작하기" /><published>2026-07-25T00:00:00+09:00</published><updated>2026-07-25T00:00:00+09:00</updated><id>http://localhost:4000/github/blog/2026/07/25/first-post</id><content type="html" xml:base="http://localhost:4000/github/blog/2026/07/25/first-post.html"><![CDATA[<p>안녕하세요.</p>
+
+<p>오늘은 GitHub Pages를 이용해 개발 블로그를 만들었습니다.</p>
+
+<h2 id="github-pages란">GitHub Pages란?</h2>
+
+<p>GitHub 저장소의 파일을 웹사이트로 배포할 수 있는 기능입니다.</p>
+
+<h2 id="블로그를-만든-이유">블로그를 만든 이유</h2>
+
+<p>프로젝트를 진행하며 해결한 문제와 새롭게 공부한 내용을 기록하기 위해 만들었습니다.</p>
+
+<h2 id="앞으로-작성할-내용">앞으로 작성할 내용</h2>
+
+<ul>
+  <li>Spring Boot 개발 기록</li>
+  <li>PostgreSQL 설계</li>
+  <li>Redis 활용 방법</li>
+  <li>Docker 배포</li>
+  <li>AWS 서버 운영</li>
+  <li>프로젝트 트러블슈팅</li>
+</ul>
+
+<p>앞으로 꾸준히 기록하겠습니다.</p>]]></content><author><name>문형주</name></author><category term="github" /><category term="blog" /><category term="GitHub" /><category term="GitHub Pages" /><category term="Jekyll" /><summary type="html"><![CDATA[안녕하세요.]]></summary></entry></feed>
