@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+    font-family:
+        Pretendard,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+.wrapper {
+    max-width: 900px;
+}
+
+.post-title {
+    font-weight: 700;
+}
+
+code {
+    font-size: 0.9em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
