@@ -6,3 +6,33 @@ theme: minima
 
 author:
   name: 문형주
+
+header_pages:
+  - projects.md
+  - notes.md
+  - about.md
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "document"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "document"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

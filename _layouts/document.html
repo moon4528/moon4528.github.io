@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign has_doc_meta = false %}
+{% if page.project or page.category %}
+  {% assign has_doc_meta = true %}
+{% endif %}
+
+<article class="doc-layout{% unless has_doc_meta %} doc-layout--single{% endunless %}">
+  {% if has_doc_meta %}
+    <aside class="doc-meta">
+      {% if page.project %}
+        <span>Project</span>
+        <strong>{{ page.project }}</strong>
+      {% elsif page.category %}
+        <span>Developer Note</span>
+        <strong>{{ page.category }}</strong>
+      {% endif %}
+      {% if page.section %}
+        <small>{{ page.section }}</small>
+      {% endif %}
+    </aside>
+  {% endif %}
+
+  <div class="doc-body">
+    <header class="doc-header">
+      <p class="eyebrow">{{ page.collection }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}
+        <p>{{ page.summary }}</p>
+      {% endif %}
+    </header>
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

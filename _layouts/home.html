@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<section class="hero home-hero">
+  <div class="hero-text">
+    <p class="eyebrow">Backend · Architecture · Troubleshooting</p>
+    <h1>프로젝트와 학습 과정을 차분하게 정리합니다.</h1>
+    <p class="hero-copy">
+      프로젝트 기록은 개요, 아키텍처, 작업 내용, 회고로 나누고 개발자 노트는 주제별 폴더로 관리합니다.
+    </p>
+  </div>
+  <div class="folder-map" aria-label="블로그 콘텐츠 구조">
+    <div class="folder-card folder-card--mint">
+      <span>Projects</span>
+      <strong>BitePick</strong>
+      <small>overview · architecture · work · retrospective</small>
+    </div>
+    <div class="folder-card folder-card--blue">
+      <span>Developer Notes</span>
+      <strong>OS / Network / Cloud</strong>
+      <small>concept · debugging · implementation</small>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-heading">
+    <h2>프로젝트</h2>
+    <a href="{{ '/projects/' | relative_url }}">전체 보기</a>
+  </div>
+  <div class="card-grid">
+    {% assign project_overviews = site.projects | where: "section", "overview" %}
+    {% for item in project_overviews limit: 6 %}
+      <a class="content-card" href="{{ item.url | relative_url }}">
+        <span class="card-kicker">{{ item.project }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.summary }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-heading">
+    <h2>개발자 노트</h2>
+    <a href="{{ '/notes/' | relative_url }}">전체 보기</a>
+  </div>
+  <div class="note-list">
+    {% assign recent_notes = site.notes | sort: "date" | reverse %}
+    {% for note in recent_notes limit: 6 %}
+      <a class="list-row" href="{{ note.url | relative_url }}">
+        <span>{{ note.category }}</span>
+        <strong>{{ note.title }}</strong>
+      </a>
+    {% endfor %}
+  </div>
+</section>
