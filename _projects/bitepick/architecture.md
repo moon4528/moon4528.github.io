@@ -1,9 +1,9 @@
 ---
-title: BitePick 아키텍처
+title: BitePick Architecture
 project: BitePick
 section: architecture
 order: 2
-summary: 서비스 구성 요소, 데이터 흐름, 배포 구조를 정리하는 문서입니다.
+summary: System components, data flow, and deployment structure for BitePick.
 ---
 
 ## 아키텍처 메모

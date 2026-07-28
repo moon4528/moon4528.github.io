@@ -1,9 +1,9 @@
 ---
-title: BitePick 프로젝트 개요
+title: BitePick Project Overview
 project: BitePick
 section: overview
 order: 1
-summary: 메뉴 선택과 매장 경험을 더 빠르게 연결하는 서비스의 목표와 핵심 기능을 정리합니다.
+summary: Goals, core features, and product direction for the BitePick service.
 ---
 
 ## 프로젝트 소개

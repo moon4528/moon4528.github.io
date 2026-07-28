@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 개발자 노트
+title: Developer Notes
 label: Archive
-description: OS, Network, Cloud, Develop 등 기술 학습 내용을 주제별로 정리합니다.
+description: Topic-based notes for OS, Network, Cloud, Develop, and related engineering concepts.
 permalink: /notes/
 ---
 

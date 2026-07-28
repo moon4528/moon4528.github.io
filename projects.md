@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 프로젝트
+title: Projects
 label: Archive
-description: 프로젝트별 개요, 아키텍처, 작업 기록, 회고를 모아둔 공간입니다.
+description: Project overviews, architecture notes, work logs, and retrospectives.
 permalink: /projects/
 ---
 

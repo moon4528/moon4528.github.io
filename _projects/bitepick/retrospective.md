@@ -1,9 +1,9 @@
 ---
-title: BitePick 회고
+title: BitePick Retrospective
 project: BitePick
 section: retrospective
 order: 4
-summary: 프로젝트를 진행하면서 배운 점과 개선할 점을 정리합니다.
+summary: Lessons learned, tradeoffs, and improvement notes from the project.
 ---
 
 ## 회고

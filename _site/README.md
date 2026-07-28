@@ -1,4 +1,4 @@
-# moon4528.github.io
+# Moon Hyungju Blog
 
 GitHub Pages와 Jekyll을 사용해 운영하는 개인 개발 블로그입니다.
 
