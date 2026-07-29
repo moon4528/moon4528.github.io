@@ -208,6 +208,47 @@ Windows에서 PATH 문제가 있으면 다음 명령을 사용합니다.
 C:\Ruby33-x64\bin\jekyll.bat build
 ```
 
+## 관리자 화면
+
+브라우저에서 글과 이미지를 관리하기 위한 Decap CMS 관리자 화면을 추가했습니다.
+
+```text
+https://moon4528.github.io/admin/
+```
+
+관리자 설정 파일은 `admin/config.yml`입니다.
+
+관리 가능한 컬렉션:
+
+- `Projects`: `_projects/` 아래 프로젝트 문서
+- `Developer Notes`: `_notes/developer-notes/` 아래 기술 노트
+- `Posts`: `_posts/` 아래 날짜 기반 포스트
+
+이미지는 다음 경로에 저장됩니다.
+
+```text
+assets/images/uploads/
+```
+
+주의할 점:
+
+- Decap CMS는 글을 저장할 때 GitHub 저장소에 commit을 생성합니다.
+- 현재 CMS 저장 대상 브랜치는 `main`입니다.
+- GitHub Pages에서 실제 저장 기능을 사용하려면 GitHub OAuth 인증 설정이 필요합니다.
+- OAuth 설정 전에도 `/admin/` 화면은 열리지만, GitHub 로그인을 통한 저장은 완료되지 않습니다.
+
+로컬에서 CMS를 테스트하려면 Decap local backend 서버가 별도로 필요합니다.
+
+```powershell
+npx decap-server
+```
+
+그 다음 Jekyll 서버를 실행하고 다음 주소로 접속합니다.
+
+```text
+http://localhost:4000/admin/
+```
+
 ## 디자인 방향
 
 현재 디자인은 심플한 모던 블로그를 기준으로 구성되어 있습니다.

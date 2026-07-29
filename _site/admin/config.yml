@@ -1,0 +1,128 @@
+backend:
+  name: github
+  repo: moon4528/moon4528.github.io
+  branch: main
+
+local_backend: true
+
+site_url: https://moon4528.github.io
+display_url: https://moon4528.github.io
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project Document"
+    folder: "_projects"
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    path: "{{project_slug}}/{{section}}/{{slug}}"
+    slug: "{{slug}}"
+    summary: "{{project}} / {{section}} / {{title}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Project Name"
+        name: "project"
+        widget: "string"
+        hint: "Example: BitePick"
+      - label: "Project Folder"
+        name: "project_slug"
+        widget: "string"
+        hint: "Folder name used under _projects. Example: bitepick"
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        options:
+          - "overview"
+          - "architecture"
+          - "work"
+          - "retrospective"
+      - label: "Order"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        default: 1
+      - label: "Summary"
+        name: "summary"
+        widget: "text"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "notes"
+    label: "Developer Notes"
+    label_singular: "Developer Note"
+    folder: "_notes/developer-notes"
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    path: "{{category_slug}}/{{slug}}"
+    slug: "{{slug}}"
+    summary: "{{category}} / {{topic}} / {{title}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "OS"
+          - "Network"
+          - "Cloud"
+          - "Develop"
+          - "Database"
+          - "Backend"
+      - label: "Category Folder"
+        name: "category_slug"
+        widget: "string"
+        hint: "Folder name used under _notes/developer-notes. Example: network"
+      - label: "Topic"
+        name: "topic"
+        widget: "string"
+        required: false
+      - label: "Summary"
+        name: "summary"
+        widget: "text"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{year}}-{{month}}-{{day}} / {{title}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss ZZ"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm"
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
