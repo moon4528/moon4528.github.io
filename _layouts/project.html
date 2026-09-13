@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="project-page">
+  <header class="project-hero">
+    <div class="project-cover">
+      <img src="{{ page.project_image | relative_url }}" alt="{{ page.title }} 프로젝트 이미지">
+    </div>
+    <div class="project-summary">
+      <a class="project-back" href="{{ '/#projects' | relative_url }}">← SELECTED PROJECTS</a>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+      <dl class="project-overview-list">
+        <div>
+          <dt>GITHUB</dt>
+          <dd><a href="{{ page.github }}" target="_blank" rel="noreferrer">{{ page.github | remove: 'https://' }} ↗</a></dd>
+        </div>
+        <div>
+          <dt>TECH STACK</dt>
+          <dd class="project-stack">
+            {% if page.stack and page.stack != empty %}
+              {% for item in page.stack %}<span>{{ item }}</span>{% endfor %}
+            {% else %}
+              <span class="project-stack-pending">기술 스택 정리 중</span>
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <section class="project-section project-impact">
+    <header class="project-section-title"><span>01</span><h2>IMPACT</h2></header>
+    <div class="impact-grid">
+      {% for item in page.impact %}
+        <div><strong>{{ item.value }}</strong><span>{{ item.label }}</span></div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="project-story">
+    {{ content }}
+  </div>
+</article>

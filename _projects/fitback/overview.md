@@ -1,29 +1,38 @@
 ---
+layout: project
 title: FitBack
 project: FitBack
 section: overview
 order: 1
 summary: 매장 상담과 고객 관리 흐름을 다루는 백엔드 프로젝트입니다.
+project_image: /assets/images/projects/fitback.png
+github: https://github.com/moon4528
+stack: []
+impact:
+  - value: 프로젝트
+    label: SERVICE
+  - value: Backend
+    label: ROLE
+  - value: 진행 중
+    label: STATUS
 ---
 
-## 프로젝트 소개
+<section class="project-section">
+  <header class="project-section-title"><span>02</span><h2>BACKGROUND</h2></header>
+  <div class="project-copy"><h3>매장 상담과 고객 관리 흐름을 하나로</h3><p>FitBack은 매장 상담 및 고객 관리를 하나의 흐름으로 연결하는 서비스 프로젝트입니다. 현재 핵심 사용자 흐름과 백엔드 책임을 구체화하고 있습니다.</p></div>
+</section>
 
-FitBack은 매장 상담 및 고객 관리를 하나의 흐름으로 연결하는 서비스 프로젝트입니다. 현재 백엔드 구조를 설계하고 구현하고 있습니다.
+<section class="project-section">
+  <header class="project-section-title"><span>03</span><h2>ARCHITECTURE</h2></header>
+  <div class="trouble-empty"><span>DESIGNING</span><p>도메인 경계와 데이터 구조를 정리한 뒤 아키텍처를 추가할 예정입니다.</p></div>
+</section>
 
-## P · Problem
+<section class="project-section">
+  <header class="project-section-title"><span>04</span><h2>ACTIVITY</h2></header>
+  <div class="trouble-empty"><span>DOCUMENTING</span><p>문제의 중요성, 검토한 선택지, 구현 과정과 검증 결과가 자연스럽게 이어지도록 활동 내용을 정리하고 있습니다.</p></div>
+</section>
 
-제품이 다루려는 상담과 고객 관리 흐름을 일관된 데이터 구조와 API로 구체화해야 합니다.
-
-## A · Analyze
-
-핵심 사용자 흐름을 기준으로 도메인의 책임을 나누고, 구현 비용과 이후의 확장 가능성을 함께 검토하고 있습니다.
-
-## A · Action
-
-- 상담 및 고객 관리 도메인의 핵심 흐름 정리
-- 백엔드 책임과 데이터 구조 설계
-- 단계별 구현 범위 구체화
-
-## R · Result
-
-현재 진행 중인 프로젝트입니다. 테스트 결과와 성능 수치가 확인되는 시점에 검증 자료와 함께 업데이트합니다.
+<section class="project-section">
+  <header class="project-section-title"><span>05</span><h2>TROUBLE SHOOTING</h2></header>
+  <div class="trouble-empty"><span>DOCUMENTING</span><p>재현 조건과 검증 자료가 확보된 트러블슈팅부터 추가할 예정입니다.</p></div>
+</section>

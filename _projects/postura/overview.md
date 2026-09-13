@@ -1,27 +1,38 @@
 ---
+layout: project
 title: Postura
 project: Postura
 section: overview
 order: 1
 summary: Postura 프로젝트에서 해결한 문제와 기술적 판단을 정리합니다.
+project_image: /assets/images/projects/postura.png
+github: https://github.com/moon4528
+stack: []
+impact:
+  - value: 프로젝트
+    label: SERVICE
+  - value: 역할 정리 중
+    label: ROLE
+  - value: 내용 정리 중
+    label: STATUS
 ---
 
-## 프로젝트 소개
+<section class="project-section">
+  <header class="project-section-title"><span>02</span><h2>BACKGROUND</h2></header>
+  <div class="project-copy"><h3>Postura</h3><p>프로젝트가 해결하려 한 문제와 서비스 배경을 정리할 예정입니다.</p></div>
+</section>
 
-Postura 프로젝트의 역할, 기술적 선택과 결과를 정리하는 상세 페이지입니다.
+<section class="project-section">
+  <header class="project-section-title"><span>03</span><h2>ARCHITECTURE</h2></header>
+  <div class="trouble-empty"><span>DESIGNING</span><p>시스템 구성과 주요 데이터 흐름을 정리한 뒤 추가할 예정입니다.</p></div>
+</section>
 
-## P · Problem
+<section class="project-section">
+  <header class="project-section-title"><span>04</span><h2>ACTIVITY</h2></header>
+  <div class="trouble-empty"><span>DOCUMENTING</span><p>문제와 선택지, 실행 과정, 검증 결과가 하나의 이야기로 읽히도록 활동 내용을 정리할 예정입니다.</p></div>
+</section>
 
-프로젝트에서 해결하려 한 문제와 그 중요성을 정리할 예정입니다.
-
-## A · Analyze
-
-검토한 선택지와 현재 상황에 맞는 대안을 선택한 근거를 정리할 예정입니다.
-
-## A · Action
-
-담당한 구현 범위와 관리한 트레이드오프를 정리할 예정입니다.
-
-## R · Result
-
-확인 가능한 수치와 검증 자료를 기준으로 결과를 업데이트할 예정입니다.
+<section class="project-section">
+  <header class="project-section-title"><span>05</span><h2>TROUBLE SHOOTING</h2></header>
+  <div class="trouble-empty"><span>DOCUMENTING</span><p>원인 분석과 해결 결과를 검증할 수 있는 사례부터 추가할 예정입니다.</p></div>
+</section>

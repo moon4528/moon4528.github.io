@@ -1,31 +1,59 @@
 ---
+layout: project
 title: BitePick
 project: BitePick
 section: overview
 order: 1
 summary: 사용자의 취향과 상황에 맞는 선택을 돕는 실서비스 백엔드 프로젝트입니다.
+project_image: /assets/images/projects/bitepick.png
+github: https://github.com/moon4528
+stack:
+  - Spring Boot
+  - PostgreSQL
+impact:
+  - value: 실서비스
+    label: SERVICE
+  - value: Backend
+    label: ROLE
+  - value: 2026.08 ~ 현재
+    label: PERIOD
 ---
 
-## 프로젝트 소개
+<section class="project-section">
+  <header class="project-section-title"><span>02</span><h2>BACKGROUND</h2></header>
+  <div class="project-copy">
+    <h3>취향과 상황에 맞는 선택을 더 쉽게</h3>
+    <p>BitePick은 사용자가 자신의 취향과 현재 상황에 맞는 선택을 할 수 있도록 돕는 실서비스입니다. 백엔드 개발자로 참여해 핵심 사용자 흐름을 API와 데이터 구조로 구체화하고, 개발 결과가 실제 운영 환경까지 자연스럽게 이어질 수 있는 기반을 만들고 있습니다.</p>
+  </div>
+</section>
 
-BitePick은 사용자의 취향과 상황에 맞는 선택을 돕는 실서비스입니다. 백엔드 개발자로 참여해 API, 데이터 흐름, 개발 및 배포 환경을 서비스 관점에서 다루고 있습니다.
+<section class="project-section">
+  <header class="project-section-title"><span>03</span><h2>ARCHITECTURE</h2></header>
+  <div class="architecture-grid">
+    <article><span>01</span><h3>API SERVER</h3><p>사용자 흐름과 비즈니스 규칙을 API의 책임으로 구분합니다.</p></article>
+    <article><span>02</span><h3>DATA</h3><p>서비스 데이터의 저장 책임과 변경 흐름을 명확히 정리합니다.</p></article>
+    <article><span>03</span><h3>OPERATION</h3><p>개발 환경, 배포 방식, 환경 변수 관리 기준을 운영 관점에서 연결합니다.</p></article>
+  </div>
+</section>
 
-## P · Problem
+<section class="project-section">
+  <header class="project-section-title"><span>04</span><h2>ACTIVITY</h2></header>
+  <article class="activity-card">
+    <div class="activity-index">01</div>
+    <div>
+      <p class="activity-label">DEVELOPMENT &amp; DEPLOYMENT</p>
+      <h3>기능 개발 전에 실행과 배포의 기준부터 맞추다</h3>
+      <p>서비스 기능이 늘어난 뒤 환경 차이를 해결하려 하면 재현과 배포 비용이 커질 수 있어, 초기 단계부터 동일한 실행 기준이 필요했습니다. 로컬 개발의 편의성만 보는 방식과 운영 환경을 먼저 고정하는 방식을 비교하고, 현재 인프라에서 바로 적용할 수 있는 배포 대상·실행 방식·환경 변수 관리부터 정리했습니다.</p>
+      <p>그 결과 개발 환경과 배포 환경에서 분리해야 할 항목이 명확해졌고, 이후 로그와 모니터링 및 데이터베이스 백업 정책을 붙일 수 있는 기준을 마련했습니다. 정량적인 효과는 운영 데이터가 확보된 뒤 실제 수치로 검증해 추가할 예정입니다.</p>
+      <div class="activity-tags"><span>환경 분리</span><span>배포 기준</span><span>운영 준비</span></div>
+    </div>
+  </article>
+</section>
 
-사용자가 자신의 상황에 맞는 선택을 더 쉽게 할 수 있도록, 제품의 핵심 흐름을 안정적으로 받쳐 줄 백엔드 기반이 필요했습니다.
-
-## A · Analyze
-
-기능 구현만을 목표로 두지 않고 운영 비용, 확장 가능성, 현재 활용 가능한 인프라를 기준으로 API 서버와 데이터베이스의 책임, 배포 방식을 검토하고 있습니다.
-
-## A · Action
-
-- 핵심 사용자 흐름을 API와 데이터 구조로 구체화
-- 로컬 개발 환경과 배포 대상 및 실행 방식 정리
-- 환경 변수 관리와 운영 환경의 로그·모니터링 방향 검토
-
-## R · Result
-
-현재 실서비스 개발을 진행 중입니다. 처리량, 응답 시간, 오류율 등 운영 데이터가 확보되면 수치와 검증 자료를 함께 공개할 예정입니다.
-
-> 숫자를 만들지 않습니다. 실제 운영 자료로 확인된 결과만 이 페이지에 반영합니다.
+<section class="project-section">
+  <header class="project-section-title"><span>05</span><h2>TROUBLE SHOOTING</h2></header>
+  <div class="trouble-empty">
+    <span>DOCUMENTING</span>
+    <p>현재 공개 가능한 트러블슈팅 사례를 정리하고 있습니다. 문제의 재현 조건, 원인 후보와 선택지, 해결 과정, 검증 지표를 함께 기록할 예정입니다.</p>
+  </div>
+</section>

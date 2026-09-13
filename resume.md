@@ -36,7 +36,7 @@ permalink: /resume/
   <h2>기술 스택</h2>
   <dl class="resume-stack">
     <div><dt>Backend</dt><dd>Java · Spring Boot · REST API</dd></div>
-    <div><dt>Data</dt><dd>PostgreSQL · Redis</dd></div>
+    <div><dt>Data</dt><dd>PostgreSQL · MySQL · Redis</dd></div>
     <div><dt>Infra</dt><dd>AWS · Docker · GitHub Actions</dd></div>
     <div><dt>Interest</dt><dd>Software Design · AI Integration · Observability</dd></div>
   </dl>
