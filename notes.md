@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Developer Notes
-label: Archive
-description: Topic-based notes for OS, Network, Cloud, Develop, and related engineering concepts.
+label: Engineering Archive
+description: 백엔드 개발에 필요한 OS, Network, Cloud 지식을 질문과 근거 중심으로 정리합니다.
 permalink: /notes/
 ---
 

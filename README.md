@@ -1,8 +1,8 @@
-# Moon Hyungju Blog
+# Moon Hyungju Portfolio
 
-GitHub Pages와 Jekyll을 사용해 운영하는 개인 개발 블로그입니다.
+GitHub Pages와 Jekyll을 사용해 운영하는 백엔드 개발자 포트폴리오입니다.
 
-백엔드 개발 과정에서 학습한 내용, 프로젝트 경험, 설계 결정, 트러블슈팅 기록을 프로젝트와 개발자 노트 구조로 나누어 정리합니다.
+메인 페이지에서 자기소개, 핵심 역량, 기술 스택, 프로젝트, 활동 이력, 연락처를 한 흐름으로 보여주며 각 프로젝트는 PAAR(Problem, Analyze, Action, Result) 구조의 상세 페이지로 연결됩니다. `/resume/`에서는 인쇄하거나 PDF로 저장할 수 있는 이력서를 제공합니다.
 
 ## 블로그 주소
 
@@ -18,7 +18,7 @@ GitHub Pages와 Jekyll을 사용해 운영하는 개인 개발 블로그입니�
 - Markdown
 - SCSS
 
-## 현재 구조
+## 주요 구조
 
 ```text
 moon4528.github.io/
@@ -51,6 +51,7 @@ moon4528.github.io/
 ├── index.md
 ├── projects.md
 ├── notes.md
+├── resume.md
 ├── Gemfile
 ├── Gemfile.lock
 └── README.md
@@ -66,10 +67,11 @@ moon4528.github.io/
 | `_notes/` | OS, Network, Cloud, Develop 등 개발자 노트 컬렉션 |
 | `_posts/` | 날짜 기반 일반 블로그 포스트 |
 | `assets/css/style.scss` | 전체 디자인과 반응형 스타일 |
-| `index.md` | 메인 페이지 |
+| `index.md` | 단일 페이지 포트폴리오 메인 화면 |
 | `projects.md` | 프로젝트 목록 페이지 |
 | `notes.md` | 개발자 노트 목록 페이지 |
 | `about.md` | 작성자 소개 페이지 |
+| `resume.md` | PDF 저장 및 인쇄용 이력서 페이지 |
 | `_site/` | Jekyll 빌드 결과물 |
 
 ## 콘텐츠 관리 방식

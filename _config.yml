@@ -1,5 +1,5 @@
-title: Moon Hyungju Blog
-description: Backend projects, architecture notes, and troubleshooting records.
+title: Moon Hyungju Portfolio
+description: 실서비스를 만들며 운영 가능한 구조와 검증 가능한 개선을 고민하는 백엔드 개발자 문형주의 포트폴리오입니다.
 lang: ko-KR
 
 theme: minima
@@ -8,9 +8,7 @@ author:
   name: Moon Hyungju
 
 header_pages:
-  - projects.md
-  - notes.md
-  - about.md
+  - resume.md
 
 collections:
   projects:

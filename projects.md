@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Projects
-label: Archive
-description: Project overviews, architecture notes, work logs, and retrospectives.
+label: Portfolio Archive
+description: 문제, 분석, 실행, 검증의 흐름으로 정리한 프로젝트 상세 기록입니다.
 permalink: /projects/
 ---
 

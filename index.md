@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Moon Hyungju Blog
+title: Moon Hyungju Portfolio
 ---

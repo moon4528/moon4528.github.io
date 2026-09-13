@@ -9,11 +9,17 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="{{ '/projects/' | relative_url }}">Projects</a>
-        <a href="{{ '/notes/' | relative_url }}">Developer Notes</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <span class="site-mark">MH</span>
+        <span>문형주 <small>Backend Engineer</small></span>
+      </a>
+      <nav class="site-nav" aria-label="주요 탐색">
+        <a href="{{ '/#strengths' | relative_url }}">핵심 역량</a>
+        <a href="{{ '/#stack' | relative_url }}">기술 스택</a>
+        <a href="{{ '/#projects' | relative_url }}">프로젝트</a>
+        <a href="{{ '/#history' | relative_url }}">히스토리</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+        <a class="nav-resume" href="{{ '/resume/' | relative_url }}">이력서</a>
       </nav>
     </header>
 
@@ -22,8 +28,8 @@
     </main>
 
     <footer class="site-footer">
-      <span>{{ site.author.name }}</span>
-      <span>{{ site.description }}</span>
+      <strong>문형주 · Backend Engineer</strong>
+      <span>문제를 정의하고, 선택의 근거를 남기며, 결과를 검증합니다.</span>
     </footer>
   </body>
 </html>
