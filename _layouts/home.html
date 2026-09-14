@@ -5,10 +5,10 @@ layout: default
 <section class="portfolio-hero" id="about">
   <div class="hero-intro">
     <p class="eyebrow">BACKEND ENGINEER · SUWON</p>
-    <h1>서비스의 다음 상황까지 생각하는<br><em>백엔드 개발자 문형주</em>입니다.</h1>
+    <h1>서비스의 흐름을 이해하고<br><em>데이터의 일관성을 지키는 백엔드 개발자 문형주</em>입니다.</h1>
     <p class="hero-copy">
-      실서비스 <strong>BitePick</strong>의 백엔드를 개발하며, 기능 구현을 넘어 운영 가능한 구조와
-      근거 있는 기술 선택을 고민하는 신입 백엔드 개발자입니다.
+      실시간 자세 분석, AI 기반 고객 관리, 지역 기반 픽업 서비스를 개발하며
+      시스템 간 책임을 나누고, 데이터의 일관성을 유지하는 구조를 설계했습니다.
     </p>
     <div class="hero-actions">
       <a class="button button--primary" href="#projects">프로젝트 보기 <span aria-hidden="true">↘</span></a>
@@ -36,21 +36,21 @@ layout: default
   <div class="strength-grid">
     <article class="strength-card strength-card--accent">
       <span class="card-number">01</span>
-      <h3>실서비스 백엔드 구현</h3>
-      <p>BitePick의 백엔드 개발자로 참여하며 API, 데이터 흐름, 배포 환경을 실제 서비스 관점에서 다룹니다.</p>
-      <strong>PRODUCT → API → DATA</strong>
+      <h3>흐름의 경계를 분리하는 설계</h3>
+      <p>Polling·Redis 기반 실시간 처리와 커밋 이후 비동기 AI 분석을 설계해, 핵심 요청이 외부 처리의 지연과 장애에 영향받지 않도록 분리했습니다.</p>
+      <strong>FLOW → BOUNDARY → RESILIENCE</strong>
     </article>
     <article class="strength-card">
       <span class="card-number">02</span>
-      <h3>근거를 남기는 기술 선택</h3>
-      <p>비용, 확장성, 현재 인프라라는 기준으로 대안을 비교하고 선택의 트레이드오프를 기록합니다.</p>
-      <strong>COST × SCALE × CONTEXT</strong>
+      <h3>데이터 불변식을 지키는 구현</h3>
+      <p>상태 전이와 비관적 잠금, DB Unique Constraint를 함께 적용해 동시 요청에서도 중복 전환·중복 답글과 같은 데이터 오류를 방지했습니다.</p>
+      <strong>STATE × LOCK × CONSTRAINT</strong>
     </article>
     <article class="strength-card">
       <span class="card-number">03</span>
-      <h3>검증 가능한 개선</h3>
-      <p>감각적인 표현보다 테스트, 로그, 응답 시간과 같은 자료로 결과를 확인하는 개발을 지향합니다.</p>
-      <strong>BUILD → MEASURE → LEARN</strong>
+      <h3>모호한 요구를 검증 가능한 계약으로</h3>
+      <p>화면 표현값과 갱신 조건을 데이터 출처·API·에러 응답으로 구체화하고, 테스트와 운영 로그를 통해 의도한 동작을 검증했습니다.</p>
+      <strong>REQUIREMENT → CONTRACT → TEST</strong>
     </article>
   </div>
 </section>
@@ -72,16 +72,16 @@ layout: default
     <div><span>04</span><h2>SELECTED PROJECTS</h2></div>
   </header>
   <div class="project-grid">
-    <a class="project-card project-card--featured" href="{{ '/projects/bitepick/overview/' | relative_url }}">
-      <div class="project-top"><span class="project-icon"><img src="{{ '/assets/images/projects/bitepick.png' | relative_url }}" alt="" loading="lazy"></span><span>01 / LIVE SERVICE</span></div>
-      <div><h3>BitePick</h3><p>사용자의 취향과 상황에 맞는 선택을 돕는 실서비스의 백엔드를 개발합니다.</p></div>
-      <div class="project-meta"><span>Spring Boot</span><span>PostgreSQL</span><b>상세 보기 →</b></div>
-    </a>
-    <a class="project-card" href="{{ '/projects/fitback/overview/' | relative_url }}">
-      <div class="project-top"><span class="project-icon"><img src="{{ '/assets/images/projects/fitback.png' | relative_url }}" alt="" loading="lazy"></span><span>02 / IN PROGRESS</span></div>
-      <div><h3>FitBack</h3><p>매장 상담과 고객 관리 흐름을 다루는 백엔드 프로젝트입니다.</p></div>
-      <div class="project-meta"><span>Backend</span><span>Data</span><b>상세 보기 →</b></div>
-    </a>
+    <div class="project-card project-card--featured">
+      <div class="project-top"><span class="project-icon"><img src="{{ '/assets/images/projects/bitepick.png' | relative_url }}" alt="" loading="lazy"></span><span>2026.08 / <a class="project-external-link" href="https://www.bitepick.co.kr/" target="_blank" rel="noopener noreferrer">LIVE SERVICE</a></span></div>
+      <a class="project-card-body" href="{{ '/projects/bitepick/overview/' | relative_url }}"><h3>BitePick</h3><p>남는 베이커리·디저트를 랜덤박스로 연결해 재고를 매출로 전환하는 지역 기반 픽업 서비스</p></a>
+      <div class="project-meta"><span>Backend</span><span>Live Service</span><span>MariaDB</span><span>AWS</span><a class="project-detail-link" href="{{ '/projects/bitepick/overview/' | relative_url }}">상세 보기 →</a></div>
+    </div>
+    <div class="project-card">
+      <div class="project-top"><span class="project-icon"><img src="{{ '/assets/images/projects/fitback.png' | relative_url }}" alt="" loading="lazy"></span><span>2026.07 / <a class="project-external-link" href="https://www.tave-wave.com/" target="_blank" rel="noopener noreferrer">TAVE 17기</a></span></div>
+      <a class="project-card-body" href="{{ '/projects/fitback/overview/' | relative_url }}"><h3>FitBack</h3><p>상담 후 미등록 고객의 이탈 사유를 AI로 분석하고 재연락 시점과 메시지를 제안하는 피트니스 센터 후속관리 서비스</p></a>
+      <div class="project-meta"><span>Backend</span><span>AI Integration</span><span>Contract-first</span><span>PostgreSQL</span><a class="project-detail-link" href="{{ '/projects/fitback/overview/' | relative_url }}">상세 보기 →</a></div>
+    </div>
     <div class="project-card">
       <div class="project-top"><span class="project-icon"><img src="{{ '/assets/images/projects/postura.png' | relative_url }}" alt="" loading="lazy"></span><span>2025.10 / <a class="project-external-link" href="https://www.cccr-edu.or.kr/mobile/page.jsp?code=swacademy" target="_blank" rel="noopener noreferrer">TABA SW Academy</a></span></div>
       <a class="project-card-body" href="{{ '/projects/postura/overview/' | relative_url }}"><h3>Postura</h3><p>MediaPipe Pose/Hands와 Redis를 활용해 웹 캠으로 사용자의 자세를 실시간으로 분석 및 교정 피드백을 제공하는 서비스</p></a>

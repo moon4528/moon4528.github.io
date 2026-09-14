@@ -34,7 +34,9 @@ layout: default
     <header class="project-section-title"><span>01</span><h2>IMPACT</h2></header>
     <div class="impact-grid">
       {% for item in page.impact %}
-        <div><strong{% if item.emphasis %} class="impact-value--emphasis"{% endif %}>{{ item.value }}{% if item.detail %}<small>{{ item.detail }}</small>{% endif %}</strong><span>{{ item.label }}</span></div>
+        {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.value }}: {{ item.detail }}">{% else %}<div>{% endif %}
+          <strong{% if item.emphasis %} class="impact-value--emphasis"{% endif %}>{{ item.value }}{% if item.detail %}<small>{{ item.detail }}</small>{% endif %}</strong><span>{{ item.label }}{% if item.url %} ↗{% endif %}</span>
+        {% if item.url %}</a>{% else %}</div>{% endif %}
       {% endfor %}
     </div>
   </section>
