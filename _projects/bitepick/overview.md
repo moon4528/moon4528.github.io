@@ -37,7 +37,7 @@ impact:
 </section>
 
 <section class="project-section">
-  <header class="project-section-title"><span>04</span><h2>ACTIVITY</h2></header>
+  <header class="project-section-title"><span>04</span><h2>CONTRIBUTIONS</h2></header>
   <article class="activity-card">
     <div class="activity-index">01</div>
     <div>

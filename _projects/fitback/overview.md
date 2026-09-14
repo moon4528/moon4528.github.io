@@ -28,7 +28,7 @@ impact:
 </section>
 
 <section class="project-section">
-  <header class="project-section-title"><span>04</span><h2>ACTIVITY</h2></header>
+  <header class="project-section-title"><span>04</span><h2>CONTRIBUTIONS</h2></header>
   <div class="trouble-empty"><span>DOCUMENTING</span><p>문제의 중요성, 검토한 선택지, 구현 과정과 검증 결과가 자연스럽게 이어지도록 활동 내용을 정리하고 있습니다.</p></div>
 </section>
 

@@ -30,11 +30,11 @@ layout: default
     </div>
   </header>
 
-  <section class="project-section project-impact">
+  <section class="project-section project-impact project-impact--{{ page.project | slugify }}">
     <header class="project-section-title"><span>01</span><h2>IMPACT</h2></header>
     <div class="impact-grid">
       {% for item in page.impact %}
-        <div><strong>{{ item.value }}</strong><span>{{ item.label }}</span></div>
+        <div><strong{% if item.emphasis %} class="impact-value--emphasis"{% endif %}>{{ item.value }}{% if item.detail %}<small>{{ item.detail }}</small>{% endif %}</strong><span>{{ item.label }}</span></div>
       {% endfor %}
     </div>
   </section>
