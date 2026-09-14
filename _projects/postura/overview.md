@@ -56,10 +56,10 @@ impact:
 <section class="project-section">
   <header class="project-section-title"><span>03</span><h2>ARCHITECTURE</h2></header>
   <div class="project-diagram-list">
-    <figure class="project-diagram-card">
+    <figure class="project-diagram-card project-diagram-card--sequence">
       <figcaption><span>01</span><div><strong>Sequence Diagram</strong><p>모니터링 세션과 실시간 자세 피드백 데이터 흐름</p></div></figcaption>
-      <a href="{{ '/assets/images/projects/postura-sequence-diagram.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/images/projects/postura-sequence-diagram.png' | relative_url }}" alt="Postura 실시간 자세 분석 시퀀스 다이어그램" loading="lazy">
+      <a href="{{ '/assets/images/projects/postura-sequence-diagram.png' | relative_url }}?v=2" target="_blank" rel="noopener noreferrer">
+        <img src="{{ '/assets/images/projects/postura-sequence-diagram.png' | relative_url }}?v=2" alt="Postura 실시간 자세 분석 시퀀스 다이어그램" loading="lazy">
       </a>
     </figure>
     <figure class="project-diagram-card">

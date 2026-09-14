@@ -235,6 +235,7 @@ button { font: inherit; }
 .project-diagram-card figcaption p { margin: 2px 0 0; color: var(--text-soft); font-size: 12px; line-height: 1.5; }
 .project-diagram-card > a { display: block; padding: 18px; background: #fafbfa; }
 .project-diagram-card img { display: block; width: 100%; height: auto; border: 0; border-radius: 5px; transition: opacity .18s ease; }
+.project-diagram-card--sequence img { max-width: 820px; margin: 0 auto; }
 .project-diagram-card > a:hover img { opacity: .88; }
 .architecture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .architecture-grid article { min-height: 190px; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 9px; }
