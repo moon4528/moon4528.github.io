@@ -88,5 +88,3 @@ permalink: /resume/
     </table>
   </div>
 </section>
-
-<footer class="resume-note">이 이력서는 포트폴리오의 최신 내용을 기준으로 작성되었습니다.</footer>

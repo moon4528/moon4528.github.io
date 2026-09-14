@@ -113,7 +113,7 @@ button { font: inherit; }
 
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .project-card,
-.project-card--featured { display: flex; flex-direction: column; justify-content: space-between; grid-row: auto; min-height: 330px; padding: 23px; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 11px; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.project-card--featured { display: flex; flex-direction: column; justify-content: flex-start; grid-row: auto; min-height: 330px; padding: 23px; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 11px; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
 .project-card:hover { transform: translateY(-2px); border-color: #b9ccc6; box-shadow: 0 12px 28px rgba(33, 59, 52, .07); }
 .project-top,
 .project-card--featured .project-top { display: flex; justify-content: space-between; align-items: start; color: var(--text-soft); font-size: 9px; font-weight: 500; letter-spacing: .07em; }
@@ -121,12 +121,12 @@ button { font: inherit; }
 .project-card--featured .project-icon { display: block; width: 56px; height: 56px; overflow: hidden; background: var(--surface-soft); border: 1px solid var(--line); border-radius: 10px; }
 .project-icon img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
 .project-card h3 { margin: 0 0 9px; font-size: 27px; font-weight: 650; letter-spacing: -.04em; }
-.project-card-body { display: block; }
+.project-card-body { display: block; margin-top: 40px; margin-bottom: 23px; }
 .project-external-link { text-decoration: underline; text-underline-offset: 2px; }
 .project-card p,
 .project-card--featured p { max-width: 500px; margin: 0; color: var(--text-soft); font-size: 14px; word-break: keep-all; overflow-wrap: break-word; }
 .project-meta,
-.project-card--featured .project-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 23px; padding-top: 16px; border-top: 1px solid var(--line); }
+.project-card--featured .project-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); }
 .project-meta span,
 .project-card--featured .project-meta span { padding: 4px 8px; background: var(--surface-soft); color: var(--text-soft); border-radius: 6px; font-size: 10px; font-weight: 500; }
 .project-meta b { margin-left: auto; color: var(--accent); font-size: 11px; font-weight: 600; }
